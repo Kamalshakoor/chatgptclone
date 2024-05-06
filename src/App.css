@@ -18,9 +18,8 @@ body{
   min-height: 100vh;
 }
 .sideBar{
-  flex: 3;
+  flex: 2;
   border-right: 1px solid rgb(100, 100, 100);
-  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -106,5 +105,61 @@ body{
   margin-right: 0.8rem;
 }
 .main{
-  flex: 9;
+  flex: 10;
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 10rem;
+  margin-bottom: 0;
+}
+.chats{
+  overflow-y: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+.chat{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+.bot{
+  background: rgba(28,30,58,1);
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+.chatimg{
+  height:3.3rem;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+}
+.chatFooter{
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+.inp{
+  padding: 0.5rem;
+  background: rgba(28,30,58,1);
+  display: flex;
+  align-items: center;
+  width: 68rem;
+  border-radius: 0.5rem;
+}
+.inp>input{
+  width: calc(100% - 3rem);
+  outline: none;
+}
+.inp>input, send{
+  background: transparent;
+  border: none;
 }
