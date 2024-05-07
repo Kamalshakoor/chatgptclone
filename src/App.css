@@ -158,8 +158,13 @@ body{
 .inp>input{
   width: calc(100% - 3rem);
   outline: none;
+  color: white;
 }
 .inp>input, send{
   background: transparent;
   border: none;
+}
+.txt{
+  line-height: 2.4rem;
+  color: rgba(222, 222, 222, 1);
 }
